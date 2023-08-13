@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- https://favicon.io/favicon-converter/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    <!-- end of favicon & Start of font awesome-->
+
+    <script src="https://kit.fontawesome.com/9e43b5fe15.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator + - / * Fully Fledged Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Fully Fledged Calculator</h1>
+    <div id="mode-toggle" ></div>
+
+    <div class="calculator">
+        <div class="screen">
+            <input type="text" id="operations" maxlength="20">
+            <input type="text" id="answer" maxlength="20">
+        </div>
+
+        <div class="buttons">
+            <div onclick="clearAll()" id="clear" class="grid-item acbtn">AC</div>
+            <div onclick="deleteLast()" id="delete" class="grid-item delbtn">Del</div>
+            <div onclick="operate('/')" id="divide" class="grid-item operator">/</div>
+            <div onclick="operate('*')" id="times" class="grid-item operator">*</div>
+            <div onclick="allocate(7)" id="seven" class="grid-item number">7</div>
+            <div onclick="allocate(8)" id="eight" class="grid-item number">8</div>
+            <div onclick="allocate(9)" id="nine" class="grid-item number">9</div>
+            <div onclick="operate('-')" id="minus" class="grid-item operator">-</div>
+            <div onclick="allocate(4)" id="four" class="grid-item number">4</div>
+            <div onclick="allocate(5)" id="five" class="grid-item number">5</div>
+            <div onclick="allocate(6)" id="six" class="grid-item number">6</div>
+            <div onclick="operate('+')" id="plus" class="grid-item ">+</div>
+            <div onclick="allocate(1)" id="one" class="grid-item number">1</div>
+            <div onclick="allocate(2)" id="two" class="grid-item number">2</div>
+            <div onclick="allocate(3)" id="three" class="grid-item number">3</div>
+            <div onclick="calculate()" id="equal" class="grid-item">=</div>
+            <div onclick="allocate(0)" id="zero" class="grid-item number">0</div>
+            <div onclick="negation()" id="negation" class="grid-item operator">+/-</div>
+            <div onclick="allocate('.')" id="dot" class="grid-item">.</div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+<script src="./dark.js"></script>
+</html>
